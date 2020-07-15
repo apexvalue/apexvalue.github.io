@@ -43,3 +43,5 @@ exclude:
   - vendor
   - node_modules
   - .sass-cache
+
+theme: jekyll-theme-slate
