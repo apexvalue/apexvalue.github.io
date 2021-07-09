@@ -1,4 +1,7 @@
 Options +FollowSymLinks
-RewriteEngine on 
-RewriteBase /
-RewriteRule ^(.*)$ http://newdomain.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . / [L,R=301]
+
+ErrorDocument 404 404.html
